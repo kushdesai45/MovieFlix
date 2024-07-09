@@ -1,0 +1,37 @@
+.movie-info{
+    font-family: serif;
+    font-size: 20px;
+    display: flex;
+    padding: 15px;
+}
+
+.movieDiv1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.movieOverview{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.movie-img{
+    width: 55%;
+}
+
+.movieDiv2{
+    width: 50%;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.p-bold{
+    font-weight: bold;
+}
+
+.back-arrow{
+    cursor: pointer;
+}
