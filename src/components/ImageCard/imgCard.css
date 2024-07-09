@@ -1,0 +1,153 @@
+.movie-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 500px;
+    gap: 16px;
+    padding-top: 16px;  
+    font-family: sans-serif; 
+}
+
+.year-label{
+    grid-column: 1 / -1;
+    height: fit-content !important;
+}
+
+.card {
+    grid-column: span 1;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    /* margin: 8px; */
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+
+.card-image {
+    width: 100%;
+    height: 50%;
+    /* object-fit: cover; */
+  }
+
+  .card-image:hover {
+    transform: scale(1.05);
+  }
+
+.card-title {
+    font-size: 1rem;
+    margin: 0;
+    text-align: -webkit-center;
+  }
+  
+  .card-description {
+    font-size: 1em;
+    color: #555;
+    text-align: -webkit-center;
+  }
+
+  .card-genre-div{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+
+  .card-genre{
+    font-size: 1em;
+    color: #555;
+    text-align: left;
+  }
+
+  .card-content {
+    padding: 16px;
+    text-overflow: ellipsis;
+    height: 50%;
+  }
+
+
+.card:hover {
+    transform: scale(1.05);
+  }
+
+
+  @media (max-width: 1200px) {
+    .movie-card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .movie-card {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40px 650px;
+    }
+
+    .card-image{
+      height: 450px;
+    }
+
+    .card-title{
+      font-size: 1.5rem;
+    }
+
+    .card-genre{
+      font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .movie-card {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40px 650px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+    }
+
+    .card-description {
+        font-size: 0.9em;
+    }
+
+    .card-genre {
+      font-size: 1.5rem;
+  }
+
+    .card-image{
+      height: 450px;
+    }
+}
+
+@media (max-width: 576px) {
+    .movie-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 650px;
+    }
+
+    .card-content {
+        padding: 8px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+    }
+
+    .card-description {
+        font-size: 0.8em;
+    }
+
+    .card-genre {
+      font-size: 1.5rem;
+  }
+
+    .card-image {
+        height: 450px;
+    }
+}
+
+.movie-year{
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+  
