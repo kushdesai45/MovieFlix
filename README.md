@@ -1,3 +1,11 @@
+Poject includes following functionalities:
+1. Load 20 movies based on year.
+2. On scroll down next year movies will load and on scroll up previous year movies will be shown.
+3. Responsive navbar which includes different genres of movies and by default it is set to all movies.
+4. We can select multiple genres and based on that we can filter movies.
+5. On click of movie card we it will be redirected to new page with movies/id where it will display information of movie.
+6. Smooth scrolling is implemented.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
